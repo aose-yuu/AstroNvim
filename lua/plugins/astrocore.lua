@@ -56,6 +56,8 @@ return {
         ["<leader>,"] = { "^", desc = "Go to start line" },
         ["<leader>."] = { "$", desc = "Go to end line" },
         ["<leader>m"] = { "%", desc = "Go to pair" },
+        ["<leader>["] = { "<cmd>bprev<CR>", desc = "Buffer prev" },
+        ["<leader>]"] = { "<cmd>bnext<CR>", desc = "Buffer next" },
         ["sv"] = { "<C-w>v", desc = "Split window vertical" },
         ["sh"] = { "<C-w>s", desc = "Split window horizontal" },
         ["<leader>a"] = { "<cmd>let @* = fnamemodify(expand('%:p'), ':~')<CR>", desc = "Copy Current Filepath" },
@@ -79,6 +81,9 @@ return {
         -- setting a mapping to false will disable it
         -- ["<esc>"] = false,
       },
+      v = {
+        ["p"] = { "\"_dP" },
+      }
     },
   },
 }
