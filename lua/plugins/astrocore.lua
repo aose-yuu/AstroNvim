@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
@@ -27,7 +25,7 @@ return {
     -- vim options can be configured here
     options = {
       opt = { -- vim.opt.<key>
-        relativenumber = true, -- sets vim.opt.relativenumber
+        relativenumber = false, -- sets vim.opt.relativenumber
         number = true, -- sets vim.opt.number
         spell = false, -- sets vim.opt.spell
         signcolumn = "auto", -- sets vim.opt.signcolumn to auto
@@ -55,6 +53,12 @@ return {
         --   function() require("astrocore.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
         --   desc = "Previous buffer",
         -- },
+        ["<leader>,"] = { "^", desc = "Go to start line" },
+        ["<leader>."] = { "$", desc = "Go to end line" },
+        ["<leader>m"] = { "%", desc = "Go to pair" },
+        ["sv"] = { "<C-w>v", desc = "Split window vertical" },
+        ["sh"] = { "<C-w>s", desc = "Split window horizontal" },
+        ["<leader>a"] = { "<cmd>let @* = fnamemodify(expand('%:p'), ':~')<CR>", desc = "Copy Current Filepath" },
 
         -- mappings seen under group name "Buffer"
         ["<Leader>bD"] = {
