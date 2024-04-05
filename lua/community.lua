@@ -17,6 +17,9 @@ return {
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.proto" },
   { import = "astrocommunity.lsp.ts-error-translator-nvim" },
+  { import = "astrocommunity.lsp.delimited-nvim" },
+  { import = "astrocommunity.lsp.lsp-signature-nvim" },
+  { import = "astrocommunity.editing-support/chatgpt-nvim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
   -- import/override with your plugins folder
