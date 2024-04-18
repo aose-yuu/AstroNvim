@@ -9,7 +9,7 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.rust" },
   -- { import = "astrocommunity.pack.docker" },
-  -- { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.typescript-all-in-one" },
   { import = "astrocommunity.pack.json" },
@@ -22,5 +22,6 @@ return {
   { import = "astrocommunity.editing-support/chatgpt-nvim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.code-runner.executor-nvim" },
   -- import/override with your plugins folder
 }
